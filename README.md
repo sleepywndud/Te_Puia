@@ -1,2 +1,4 @@
-# Te_Puia
-AS92005 - Develop a digital technologies outcome
+James (Juyoung) Park
+AS92005
+
+Te Puia Website
