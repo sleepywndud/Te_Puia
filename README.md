@@ -1,4 +1,6 @@
-James (Juyoung) Park
+James Park\
 AS92005
 
-Te Puia Website
+---
+
+Welcome to my Te Puia Website!
