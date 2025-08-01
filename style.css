@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke
+}
+
+ul {
+    /* Temporary style for me to easily identify the nav */
+    background-color: lightskyblue;
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navlinks {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
