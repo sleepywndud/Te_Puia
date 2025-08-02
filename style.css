@@ -1,28 +1,56 @@
+@font-face {
+    font-family: HubotSans;
+    src: url(/Fonts/HubotSans-Regular.ttf);
+}
+
+* {
+    --blue1: #1e3f66;
+    --blue2: #2e5984;
+    --blue3: #528aae;
+    --blue4: #73a5c6;
+    --blue5: #91bad6;
+    --blue6: #bcd2e8;
+}
+
 body {
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    font-family: HubotSans;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
 }
 
 ul {
-    /* Temporary style for me to easily identify the nav */
-    background-color: lightskyblue;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
     list-style: none;
+    text-align: center;
+    background-color: var(--blue1);
 }
 
 li {
     float: left;
+    background: var(--blue1);
 }
 
 li a {
-    display: block;
-    color: blue;
     text-align: center;
-    padding: 14px 16px;
+    display: block;
+    color: whitesmoke;
+    padding: 20px 20px 20px 20px;
     text-decoration: none;
+}
+
+li:hover {
+    background-color: var(--blue2);
+    border-radius: 16px;
 }
 
 .navlinks {
     display: block;
-    padding: 8px;
-    background-color: #dddddd;
 }
-
