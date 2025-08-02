@@ -17,40 +17,36 @@ body {
     font-family: HubotSans;
     padding: 0;
     margin: 0;
+    padding-top: 70px;
 }
 
 main {
     width: 100%;
 }
 
-ul {
-    margin: 0;
-    width: 100%;
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     position: fixed;
     top: 0;
-    list-style: none;
-    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.parent.scrolled {
     background-color: var(--blue1);
 }
 
-li {
-    float: left;
-    background: var(--blue1);
+.nav-link {
+    padding: 0.5rem;
+    color: var(--blue5);
 }
 
-li a {
-    text-align: center;
-    display: block;
-    color: whitesmoke;
-    padding: 20px 20px 20px 20px;
-    text-decoration: none;
-}
-
-li:hover {
-    background-color: var(--blue2);
-    border-radius: 16px;
-}
-
-.navlinks {
-    display: block;
+.home-link {
+    padding: 0.5rem;
+    color: var(--blue5);
 }
