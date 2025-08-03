@@ -17,7 +17,6 @@ body {
     font-family: HubotSans;
     padding: 0;
     margin: 0;
-    padding-top: 70px;
 }
 
 main {
@@ -33,7 +32,6 @@ main {
     top: 0;
     width: 100%;
     background-color: transparent;
-    z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
@@ -43,10 +41,29 @@ main {
 
 .nav-link {
     padding: 0.5rem;
-    color: var(--blue5);
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 .home-link {
     padding: 0.5rem;
-    color: var(--blue5);
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: url(/images/self_taken_images/geyser16.jpeg);
+    background-position: left;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
 }
