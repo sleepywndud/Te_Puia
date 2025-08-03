@@ -1,1 +1,0 @@
-This folder contains the wireframes used for my website.
