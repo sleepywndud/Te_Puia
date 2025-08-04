@@ -3,6 +3,11 @@
     src: url(/Fonts/HubotSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: NothingYouCouldDo;
+    src: url(/fonts/NothingYouCouldDo-Regular.ttf);
+}
+
 * {
     --blue1: #1e3f66;
     --blue2: #2e5984;
@@ -23,7 +28,7 @@ main {
     width: 100%;
 }
 
-.parent {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +40,7 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.parent.scrolled {
+.navbar.scrolled {
     background-color: var(--blue1);
 }
 
@@ -52,7 +57,8 @@ main {
 }
 
 .hero-image {
-    background-image: url(/images/self_taken_images/geyser16.jpeg);
+    background-image: url(/images/self_taken_images/main_hero-image.png);
+    background-color: var(--blue2);
     background-position: left;
     background-size: cover;
     height: 600px;
@@ -66,4 +72,28 @@ main {
     text-align: center;
     width: 100%;
     font-size: 4rem;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.content {
+    padding: 1.5rem;
+    line-height: 2;
+}
+
+.header, .hero-text {
+    font-family: NothingYouCouldDo;
+}
+
+.divider {
+    width: 5rem;
+    height: 0.4rem;
+    background: var(--blue2);
+    border-radius: 0.4rem;
 }
