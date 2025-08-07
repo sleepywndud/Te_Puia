@@ -9,12 +9,10 @@
 }
 
 * {
-    --blue1: #1e3f66;
-    --blue2: #2e5984;
-    --blue3: #528aae;
-    --blue4: #73a5c6;
-    --blue5: #91bad6;
-    --blue6: #bcd2e8;
+    --blue1: #042241;
+    --blue2: #133955;
+    --blue3: #205068;
+    --blue4: #2D687C;
 }
 
 body {
@@ -26,6 +24,11 @@ body {
 
 main {
     width: 100%;
+}
+
+b {
+    font-size: 1.2rem;
+    color: var(--blue4);
 }
 
 .navbar {
@@ -41,19 +44,20 @@ main {
 }
 
 .navbar.scrolled {
-    background-color: var(--blue1);
+    background-color: #042241;
+    opacity: 80%;
 }
 
 .nav-link {
     padding: 0.5rem;
-    color: whitesmoke;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .home-link {
     padding: 0.5rem;
-    color: whitesmoke;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .hero-image {
@@ -83,7 +87,7 @@ main {
 }
 
 .content {
-    padding: 1.5rem;
+    padding: 2rem;
     line-height: 2;
 }
 
@@ -94,6 +98,15 @@ main {
 .divider {
     width: 5rem;
     height: 0.4rem;
-    background: var(--blue2);
+    background: var(--blue4);
     border-radius: 0.4rem;
+}
+
+.three-by-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
 }
