@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Geist;
+    src: url(/Fonts/geist/Geist-Regular.ttf);
+}
+
+@font-face {
+    font-family: Vujahday;
+    src: url(/fonts/VujahdayScript-Regular.ttf);
+}
+
+* {
+    --blue1: #042241;
+    --blue2: #133955;
+    --blue3: #205068;
+    --blue4: #2D687C;
+    --blue5: #000000;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Geist;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue4);
+}
+
+b {
+    font-size: 1.2rem;
+    color: var(--blue4);
+    filter: brightness(150%);
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--blue1);
+    color: whitesmoke;
+}
+
+.button {
+    background-color: var(--blue3);
+    font-family: Geist;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 2222;
+}
+
+.navbar.scrolled {
+    background-color: #042241;
+    opacity: 90%;
+}
+
+.nav-link {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.home-link {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.hero-image {
+    background-image: url(/images/self_taken_images/main_hero-image.png);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.cta-text {
+    color: whitesmoke;
+    font-family: Vujahday;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.content {
+    padding: 2rem;
+    line-height: 2;
+}
+
+.header, 
+.hero-text {
+    font-family: Vujahday;
+    padding: 0px;
+    margin: 0px;
+}
+
+.divider {
+    width: 5rem;
+    height: 0.4rem;
+    background: var(--blue4);
+    border-radius: 0.4rem;
+}
+
+.four-by-three {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr 1fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.indexlinks {
+    margin: 0px;
+    text-align: center;
+}
+
+.indexlinks p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.indeximages img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(40%);
+    border-color: var(--blue2);
+    border-style: solid;
+    border-width: 3.5vw;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.social {
+    width: 2rem;
+    margin: 0.6rem;
+    margin-top: 1.6rem;
+    display: inline-block;
+}
