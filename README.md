@@ -5,3 +5,144 @@ AS92005
 
 Welcome to my Te Puia Website!\
 The purpose of this website is to inform people in Otumoetai College about all that Te Puia has to offer visitors.
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Te Puia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="home-link">Te Puia</a>
+                <div>
+                    <a class="nav-link" href="pages/pohutu_geyser.html">Pohutu Geyser</a>
+                    <a class="nav-link" href="pages/geothermal_valley.html">Geothermal Valley</a>
+                    <a class="nav-link" href="pages/mudpools.html">Mudpools</a>
+                    <a class="nav-link" href="pages/carving_schools.html">Carving Schools</a>
+                    <a class="nav-link" href="pages/weaving_schools.html">Weaving Schools</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hero-image">
+                <h1 class="hero-text">
+                    Te Puia
+                </h1>
+            </div>
+            <div class="two-column">
+                <div class="content" style="text-align: center;">
+                    <img 
+                        src="/images/self_taken_images/geyser10.jpeg" 
+                        alt="Image of Te Puia" 
+                        width="100%"
+                    >
+                </div>
+                <div class="content">
+                    <h2 class="header">
+                        Rotorua's famous geysers and Maori heritage...
+                        <div class="divider"></div>
+                    </h2>
+                    <p>
+                        Rotorua's famous <b>geysers</b> and <b>Māori heritage</b> make Te Puia a 
+                        special place that many people love to visit.
+                    </p>
+                    <p>
+                        Here, you can see the amazing <b>Pōhutu Geyser</b> shoot hot water 
+                        high into the air, along with <b>bubbling mud pools</b> and <b>steam 
+                        vents</b>. At Te Puia, you can also learn about Māori culture 
+                        by watching <b>traditional carvings and weaving</b>!
+                    </p>
+                </div>
+            </div>
+            <h1 class="header" style="text-align: center;">
+                Where you can see incredible steaming pools and powerful geysers, <br>
+                and discover the amazing traditions of New Zealand's first people.
+            </h1>
+            <div class="four-by-three">
+                <div class="indeximages">
+                    <img src="/images/self_taken_images/geyser13.jpeg" style="width: 100%;">
+                </div>
+                <div class="indeximages">
+                    <img src="/images/self_taken_images/geothermal8.jpeg" style="width: 100%;">
+                </div>
+                <div class="indeximages">
+                    <img src="/images/mud_pools.jpeg" style="width: 100%;">
+                </div>
+                <div class="indexlinks">
+                    <p>Pohutu Geyser</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+                <div class="indexlinks">
+                    <p>Geothermal Valleys</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+                <div class="indexlinks">
+                    <p>Mudpools</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+                <div class="indeximages">
+                    <img src="/images/carving.jpeg" style="width: 100%;">
+                </div>
+                <div class="indeximages">
+                    <img src="/images/weaved_bags.jpeg" style="width: 100%;">
+                </div>
+                <div class="indeximages">
+                    <img src="/images/Kiwi 2.jpeg" style="width: 100%;">
+                </div>
+                <div class="indexlinks">
+                    <p>National Carving Schools</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+                <div class="indexlinks">
+                    <p>National Weaving Schools</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+                <div class="indexlinks">
+                    <p>Kiwi Birds</p>
+                    <a href="/pages/pohutu_geyser.html">Click here to learn more..</a>
+                </div>
+            </div>
+            <div class="cta">
+                <div class="cta-text">
+                    <p>Plan your Te Puia visit today!</p>
+                    <a class="button" href="http://127.0.0.1:5500/index.html">Visit Te Puia</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="content">
+                    <h2 class="header">Information</h2>
+                    <div class="divider"></div>
+                    <p><b>Address:</b> Hemo Rd, Tihiotonga, Rotorua 3010, Bay of Plenty, New Zealand</p>
+                    <p><b>Booking:</b> reservations@tepuia.com ㅣ 07 348 9047 ㅣ https://ecommerce.tepuia.com/</p>
+                    <p><b>Website Inquiries:</b> 22222w@duck.com</p>
+                </div>
+                <div class="content">
+                    <h2 class="header">Socials</h2>
+                    <div class="divider"></div>
+
+                    <a href="https://www.facebook.com/tepuia.rotorua.nz/" target="_blank">
+                        <img src="/icons/facebook.png" class="social">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCsmZvq3uW5Fuk9iyGkIeQlA" target="_blank">
+                        <img src="/icons/youtube.png" class="social">
+                    </a>
+                    <a href="https://x.com/Te_Puia" target="_blank">
+                        <img src="/icons/x-twitter.png" class="social">
+                    </a>
+                    <a href="https://www.instagram.com/te_puia/" target="_blank">
+                        <img src="/icons/instagram.png" class="social">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
