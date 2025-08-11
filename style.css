@@ -1,6 +1,6 @@
 @font-face {
-    font-family: HubotSans;
-    src: url(/Fonts/HubotSans-Regular.ttf);
+    font-family: Geist;
+    src: url(/Fonts/geist/Geist-Regular.ttf);
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 
 body {
     background-color: whitesmoke;
-    font-family: HubotSans;
+    font-family: Geist;
     padding: 0;
     margin: 0;
 }
@@ -41,6 +41,7 @@ b {
     width: 100%;
     background-color: transparent;
     transition: background-color 0.3s ease;
+    z-index: 2222;
 }
 
 .navbar.scrolled {
@@ -102,11 +103,30 @@ b {
     border-radius: 0.4rem;
 }
 
-.three-by-two {
+.four-by-three {
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 0.2fr 1fr 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.indexlinks {
+    margin: 0px;
     text-align: center;
+}
+
+.indeximages img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(40%);
+    border-color: var(--blue2);
+    border-style: solid;
+    border-width: 3rem;
+    border-radius: 100%;
+    box-sizing: border-box;
 }
