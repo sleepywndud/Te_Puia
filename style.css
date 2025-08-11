@@ -72,6 +72,17 @@ b {
     align-items: center;
 }
 
+.cta {
+    background-image: url(/images/self_taken_images/call-to-action.png);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-text {
     color: whitesmoke;
     text-align: center;
