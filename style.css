@@ -1,19 +1,19 @@
 @font-face {
     font-family: Geist;
-    src: url(/Fonts/geist/Geist-Regular.ttf);
+    src: url(fonts/geist/Geist-Regular.ttf);
 }
 
 @font-face {
     font-family: Vujahday;
-    src: url(/fonts/VujahdayScript-Regular.ttf);
+    src: url(fonts/VujahdayScript-Regular.ttf);
 }
 
-* {
+:root {
     --blue1: #042241;
     --blue2: #133955;
     --blue3: #205068;
     --blue4: #2D687C;
-    --blue5: #000000;
+    --blue5: #529cb5;
 }
 
 body {
@@ -30,12 +30,19 @@ main {
 a {
     text-decoration: none;
     color: var(--blue4);
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    font-size: large;
+    color: var(--blue5);
+    transition: 0.3s ease-in-out;
 }
 
 b {
     font-size: 1.2rem;
-    color: var(--blue4);
-    filter: brightness(150%);
+    font-weight: bold;
+    color: var(--blue5);
 }
 
 footer {
@@ -54,6 +61,16 @@ footer {
     text-decoration: none;
     font-size: 1rem;
     color: whitesmoke;
+
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--blue4);
+    transition: 0.3s ease-in-out;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    color: whitesmoke;
 }
 
 .navbar {
@@ -65,7 +82,7 @@ footer {
     top: 0;
     width: 100%;
     background-color: transparent;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease-in-out;
     z-index: 2222;
 }
 
@@ -78,16 +95,31 @@ footer {
     padding: 0.5rem;
     text-decoration: none;
     color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    padding: 0.5rem;
+    font-size: large;
+    color: var(--blue5);
+    transition: 0.3s ease-in-out;
 }
 
 .home-link {
     padding: 0.5rem;
     text-decoration: none;
     color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+.home-link:hover {
+    font-size: large;
+    color: var(--blue5);
+    transition: 0.3s ease-in-out;
 }
 
 .hero-image {
-    background-image: url(/images/self_taken_images/main_hero-image.png);
+    background-image: url(images/self_taken_images/main_hero-image.png);
     background-color: var(--blue2);
     background-position: left;
     background-size: cover;
@@ -102,6 +134,7 @@ footer {
     background-position: left;
     background-size: cover;
     height: 200px;
+    padding-bottom: 1.7rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -123,7 +156,7 @@ footer {
     color: whitesmoke;
     text-align: center;
     width: 100%;
-    font-size: 4rem;
+    font-size: 7rem;
 }
 
 .two-column {
@@ -166,6 +199,7 @@ footer {
 .indexlinks {
     margin: 0px;
     text-align: center;
+    font-size: 16px;
 }
 
 .indexlinks p {
@@ -200,4 +234,13 @@ footer {
     margin: 0.6rem;
     margin-top: 1.6rem;
     display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.social:hover {
+    width: 2.5rem;
+    margin: 0.6rem;
+    margin-top: 1.6rem;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
 }
