@@ -1,3 +1,4 @@
+/* Font importing */
 @font-face {
     font-family: Geist;
     src: url(fonts/geist/Geist-Regular.ttf);
@@ -8,6 +9,7 @@
     src: url(fonts/VujahdayScript-Regular.ttf);
 }
 
+/* Sets the palette at :root */
 :root {
     --blue1: #042241;
     --blue2: #133955;
@@ -16,6 +18,7 @@
     --blue5: #529cb5;
 }
 
+/* Declares styles for the basic elements */
 body {
     background-color: whitesmoke;
     font-family: Geist;
@@ -26,15 +29,16 @@ body {
 main {
     width: 100%;
 }
-
+ 
 a {
     text-decoration: none;
     color: var(--blue4);
     transition: 0.3s ease-in-out;
 }
 
-a:hover {
-    font-size: large;
+a:hover { 
+    /* Adds animations on hover */
+    font-size: 1.2rem;
     color: var(--blue5);
     transition: 0.3s ease-in-out;
 }
@@ -45,6 +49,14 @@ b {
     color: var(--blue5);
 }
 
+p {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
 footer {
     margin: 0px;
     padding: 0px;
@@ -52,6 +64,7 @@ footer {
     color: whitesmoke;
 }
 
+/* Styles for classes */
 .button {
     background-color: var(--blue3);
     font-family: Geist;
@@ -65,7 +78,8 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
-.button:hover {
+.button:hover { 
+    /* Animation on hover */
     background-color: var(--blue4);
     transition: 0.3s ease-in-out;
     border-radius: 1.5rem;
@@ -79,14 +93,16 @@ footer {
     align-items: center;
     padding: 1rem;
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: transparent;
     transition: 0.3s ease-in-out;
+
+    /* Z-index makes it so that the navbar always stays on the top */
     z-index: 2222;
 }
 
-.navbar.scrolled {
+.navbar.scrolled { 
+    /* This is the class that will be applied when the user scrolls down */
     background-color: #042241;
     opacity: 90%;
 }
@@ -99,6 +115,7 @@ footer {
 }
 
 .nav-link:hover {
+    /* Animation on hover */
     padding: 0.5rem;
     font-size: large;
     color: var(--blue5);
@@ -113,12 +130,14 @@ footer {
 }
 
 .home-link:hover {
+    /* Animation on hover */
     font-size: large;
     color: var(--blue5);
     transition: 0.3s ease-in-out;
 }
 
-.hero-image {
+.index-hero-image {
+    /* Hero image styles for the index.html page */
     background-image: url(images/self_taken_images/main_hero-image.png);
     background-color: var(--blue2);
     background-position: left;
@@ -130,6 +149,7 @@ footer {
 }
 
 .cta {
+    /* Call-To-Action styles for the index.html page */
     background-color: var(--blue2);
     background-position: left;
     background-size: cover;
@@ -142,6 +162,7 @@ footer {
 }
 
 .cta-text {
+    /* Call-To-Action text styling */
     color: whitesmoke;
     font-family: Vujahday;
     text-align: center;
@@ -152,8 +173,10 @@ footer {
     align-items: center;
 }
 
-.hero-text {
+.index-hero-text {
+    /* Hero text styling that goes on the index.html page */
     color: whitesmoke;
+    font-family: Vujahday;
     text-align: center;
     width: 100%;
     font-size: 7rem;
@@ -180,6 +203,7 @@ footer {
 }
 
 .divider {
+    /* Use <div class="divider"></div> to add a blue line */
     width: 5rem;
     height: 0.4rem;
     background: var(--blue4);
@@ -187,6 +211,8 @@ footer {
 }
 
 .four-by-three {
+    /* 4x3 grid that is used for the 3rd section of index.html */
+    /* The 2nd and 4th row are smaller, as they are for the text */
     width: 80%;
     margin: auto;
     display: grid;
@@ -197,18 +223,21 @@ footer {
 }
 
 .indexlinks {
+    /* Styles for the text that go below the circle images in index.html */
     margin: 0px;
     text-align: center;
     font-size: 16px;
 }
 
 .indexlinks p {
+    /* Styles for the text that go below the circle images in index.html */
     margin: 0px;
     padding: 0px;
     text-align: center;
 }
 
 .indeximages img {
+    /* Styles for the circle images in index.html */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -222,6 +251,7 @@ footer {
 }
 
 .footer {
+    /* Two-column grid (ratio of 2:1) */
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
@@ -230,6 +260,7 @@ footer {
 }
 
 .social {
+    /* Styles for the social-media icons */
     width: 2rem;
     margin: 0.6rem;
     margin-top: 1.6rem;
@@ -238,6 +269,7 @@ footer {
 }
 
 .social:hover {
+    /* Animation on hover */
     width: 2.5rem;
     margin: 0.6rem;
     margin-top: 1.6rem;
