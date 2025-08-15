@@ -1,5 +1,4 @@
-James Park\
-AS92005
+James (Juyoung) Park
 
 ---
 
