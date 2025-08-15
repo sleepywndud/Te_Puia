@@ -16,12 +16,15 @@
     --blue3: #205068;
     --blue4: #2D687C;
     --blue5: #529cb5;
+
+    --fallback_fonts: arial, sans-serif, serif;
 }
 
 /* Declares styles for the basic elements */
 body {
+    background-image: linear-gradient(to bottom, #ffffff, #d4eaff); 
     background-color: whitesmoke;
-    font-family: Geist;
+    font-family: Geist, var(--fallback_fonts);
     padding: 0;
     margin: 0;
 }
@@ -148,6 +151,18 @@ footer {
     align-items: center;
 }
 
+.geyser-hero-image {
+    /* Hero image styles for the pohutu_geyser.html page */
+    background-image: url(images/self_taken_images/geyser14.jpeg);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cta {
     /* Call-To-Action styles for the index.html page */
     background-color: var(--blue2);
@@ -173,7 +188,7 @@ footer {
     align-items: center;
 }
 
-.index-hero-text {
+.hero-text {
     /* Hero text styling that goes on the index.html page */
     color: whitesmoke;
     font-family: Vujahday;
