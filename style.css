@@ -47,7 +47,7 @@ a:hover {
 }
 
 b {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--blue5);
 }
@@ -197,10 +197,43 @@ footer {
     font-size: 7rem;
 }
 
-.two-column {
+.two-by-one {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.one-by-two {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.three-by-two {
+    /* 3x2 grid that is used for the 2nd section of pohutu_geyser.html */
+    /* The 2nd and 4th row are the same, as they are for the text */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+}
+
+.three-by-four {
+    /* 3x4 grid that is used for the 3rd section of index.html */
+    /* The 2nd and 4th row are the same, as they are for the text */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.2fr 1fr 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -225,37 +258,26 @@ footer {
     border-radius: 0.4rem;
 }
 
-.four-by-three {
-    /* 4x3 grid that is used for the 3rd section of index.html */
-    /* The 2nd and 4th row are smaller, as they are for the text */
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 0.2fr 1fr 0.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.indexlinks {
+.links {
     /* Styles for the text that go below the circle images in index.html */
     margin: 0px;
     text-align: center;
     font-size: 16px;
 }
 
-.indexlinks p {
+.links p {
     /* Styles for the text that go below the circle images in index.html */
     margin: 0px;
     padding: 0px;
     text-align: center;
 }
 
-.indeximages img {
+.circle-images img {
     /* Styles for the circle images in index.html */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    text-align: center;
     object-fit: cover;
     clip-path: circle(40%);
     border-color: var(--blue2);
