@@ -67,6 +67,10 @@ footer {
     color: whitesmoke;
 }
 
+img {
+    border-radius: 0.5vw;
+}
+
 /* Styles for classes */
 .button {
     background-color: var(--blue3);
@@ -107,7 +111,7 @@ footer {
 .navbar.scrolled { 
     /* This is the class that will be applied when the user scrolls down */
     background-color: #042241;
-    opacity: 90%;
+    opacity: 80%;
 }
 
 .nav-link {
@@ -212,14 +216,21 @@ footer {
     grid-row-gap: 0px;
 }
 
+.one-by-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
 .three-by-two {
     /* 3x2 grid that is used for the 2nd section of pohutu_geyser.html */
-    /* The 2nd and 4th row are the same, as they are for the text */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 0.7vw;
+    grid-row-gap: 0.5vw;
     width: 80%;
     margin: auto;
     display: grid;
@@ -248,6 +259,14 @@ footer {
     font-family: Vujahday;
     padding: 0px;
     margin: 0px;
+}
+
+.centerheader {
+    font-family: Vujahday;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin: 4rem;
 }
 
 .divider {
@@ -285,6 +304,15 @@ footer {
     border-width: 3.5vw;
     border-radius: 100%;
     box-sizing: border-box;
+}
+
+.geyserimages {
+    width: 100%;  
+    box-sizing: border-box;
+}
+
+.geyserinfos {
+    text-align: center;
 }
 
 .footer {

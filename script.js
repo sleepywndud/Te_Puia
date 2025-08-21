@@ -1,6 +1,6 @@
 const navigation = document.querySelector('.navbar'); 
 window.addEventListener('scroll', () => { 
-    if (window.scrollY > 500) { 
+    if (window.scrollY > 400) { 
         navigation.classList.add('scrolled'); 
     } 
     else { 
