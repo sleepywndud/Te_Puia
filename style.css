@@ -61,7 +61,7 @@ h1 {
 }
 
 footer {
-    margin: 0px;
+    margin-top: 3rem;
     padding: 0px;
     background-color: var(--blue1);
     color: whitesmoke;
@@ -69,6 +69,10 @@ footer {
 
 img {
     border-radius: 0.5vw;
+}
+
+.space {
+    margin: 4rem;
 }
 
 /* Styles for classes */
@@ -157,7 +161,43 @@ img {
 
 .geyser-hero-image {
     /* Hero image styles for the pohutu_geyser.html page */
-    background-image: url(images/self_taken_images/geyser14.jpeg);
+    background-image: url(images/self_taken_images/geyser_hero.jpeg);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geothermal-hero-image {
+    /* Hero image styles for the geothermal_valley.html page */
+    background-image: url(images/self_taken_images/geothermal_hero.png);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mudpool-hero-image {
+    /* Hero image styles for the mudpools.html page */
+    background-image: url(images/self_taken_images/mudpool_hero.png);
+    background-color: var(--blue2);
+    background-position: left;
+    background-size: cover;
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carving-school-hero-image {
+    /* Hero image styles for the carving_schools.html page */
+    background-image: url(images/carving_schools_hero.png);
     background-color: var(--blue2);
     background-position: left;
     background-size: cover;
@@ -207,6 +247,14 @@ img {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+}
+
+.two-by-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
 
 .one-by-two {
@@ -269,6 +317,19 @@ img {
     margin: 4rem;
 }
 
+.paragraph {
+    width: 80%;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursive {
+    font-family: Vujahday;
+    margin: 0;
+    text-align: center;
+}
+
 .divider {
     /* Use <div class="divider"></div> to add a blue line */
     width: 5rem;
@@ -309,6 +370,14 @@ img {
 .geyserimages {
     width: 100%;  
     box-sizing: border-box;
+}
+
+.fullimage {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
 }
 
 .geyserinfos {
